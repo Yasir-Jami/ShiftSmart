@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout2">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <Button-->
+<!--            android:id="@+id/all_profiles"-->
+<!--            android:layout_width="105dp"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="All" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/opening_profiles"-->
+<!--            android:layout_width="105dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_toRightOf="@id/all_profiles"-->
+<!--            android:backgroundTint="@color/open_color_yellow"-->
+<!--            android:text="Opening Trained" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/closing_profiles"-->
+<!--            android:layout_width="105dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="Closing Trained"-->
+<!--            android:layout_toRightOf="@id/opening_profiles"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:backgroundTint="@color/close_color_purple" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_info"
+            android:text="Only showing employees available for this shift"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/remove_info"-->
+<!--            android:layout_below="@id/page_info"-->
+<!--            android:text="The 'Remove Employee' button removes the current employee from the shift"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:gravity="center"-->
+<!--            android:textStyle="italic"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="5dp"/>-->
+
+        <Button
+            android:id="@+id/select_none_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/page_info"
+            android:text="Remove Current Employee"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:color="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_selection"
+            android:layout_width="match_parent"
+            android:layout_height="436dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/select_none_button"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".EmployeeSelection" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

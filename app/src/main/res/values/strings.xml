@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">ShiftSmart</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+    <string name="schedule">Schedule</string>
+    <string name="profiles">Profiles</string>
+    <string name="confirm">Confirm</string>
+    <string name="new_profile">New Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="nickname">Nickname</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="opening_trained">Opening Trained</string>
+    <string name="closing_trained">Closing Trained</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="is_trained_closing">Trained for Closing Shift</string>
+    <string name="is_not_trained_closing">Not Trained for Closing Shift</string>
+    <string name="is_trained_opening">Trained for Opening Shift</string>
+    <string name="is_not_trained_opening">Not Trained for Opening Shift</string>
+    <string name="profile_default_employee_name">Employee Name</string>
+    <string name="profile_default_employee_id">Employee ID</string>
+    <string name="profile_default_phone_number">Phone Number</string>
+    <string name="profile_default_employee_email">Email</string>
+    <string name="employee_id_label">Employee ID:</string>
+    <string name="email_label">Email:</string>
+    <string name="phone_number_label">Phone Number:</string>
+    <string name="select_the_shifts_this_employee_is_generally_available">Select the shifts this employee is generally available</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="full_day">Full Day</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="thur">Thur</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="add_availability">Edit Availability</string>
+    <string name="feb_2024">February 2024</string>
+    <string name="_1">1</string>
+    <string name="general_availability_title">General Availability:</string>
+    <string name="add_employee">CLICK TO ADD EMPLOYEE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_shift">Save Shift</string>
+    <string name="clear_all">Clear All </string>
+    <string name="c">C</string>
+    <string name="o">O</string>
+
+</resources>

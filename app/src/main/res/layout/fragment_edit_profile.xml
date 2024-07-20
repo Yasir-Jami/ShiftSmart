@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/editemployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/edit_profile"
+            android:textColor="@color/primary"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FirstName_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editemployee"
+            android:hint="@string/first_name"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FirstNameInput_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/person"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="18sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LastName_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FirstName_edit"
+            android:hint="@string/last_name"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/LastNameInput_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/person"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="18sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Nickname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LastName_edit"
+            android:hint="@string/nickname"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NicknameInput_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/person"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="18sp"
+                android:maxLength="11"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EmployeeID_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/employee_id"
+            app:endIconMode="clear_text"
+            android:layout_below="@id/Nickname_edit"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EmployeeIDInput_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/id"
+            android:inputType="number"
+            android:textSize="18sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EmailAddress_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            app:endIconMode="clear_text"
+            android:layout_below="@id/EmployeeID_edit"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EmailAddressInput_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PhoneNumber_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            app:endIconMode="clear_text"
+            android:layout_below="@id/EmailAddress_edit"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PhoneNumberInput_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:inputType="phone"
+                android:textSize="18sp"
+                android:maxLength="10"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/OpeningShift_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PhoneNumber_edit"
+            android:layout_marginTop="15dp"
+            android:buttonTint="@color/open_color_yellow"
+            android:checked="false"
+            android:text="@string/opening_trained"
+            android:textColor="@color/textgrey"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ClosingShift_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PhoneNumber_edit"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/OpeningShift_edit"
+            android:text="@string/closing_trained"
+            android:textColor="@color/textgrey"
+            android:buttonTint="@color/close_color_purple"
+            android:checked="false"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/add_availability_button_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/availability_table_edit"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_availability"
+            android:textSize="18sp"
+            android:backgroundTint="@color/textgrey"
+            />
+
+        <TextView
+            android:id="@+id/table_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/general_availability_title"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/OpeningShift_edit"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/textgrey"/>
+
+        <!-- Table Layout for Availability -->
+        <TableLayout
+            android:id="@+id/availability_table_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/table_title"
+            android:stretchColumns="*">
+
+            <!-- Header Row -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="W"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:gravity="center"/>
+            </TableRow>
+            <TableRow>
+            </TableRow>
+            <TableRow>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_availability_button_edit"
+            android:layout_toRightOf="@id/delete_button"
+            android:layout_marginTop="20dp"
+            android:text="@string/save_changes"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_availability_button_edit"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/delete"
+            android:text="@string/delete_profile"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_button"
+            app:srcCompat="@drawable/arrow"/>
+
+    </RelativeLayout>
+
+</ScrollView>

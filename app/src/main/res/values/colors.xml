@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FF000000</color>
+    <color name="purple_500">#FF000000</color>
+    <color name="purple_700">#FF000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="darkGrayColor">#a9a9a9</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF000000</color>
+    <color name="colorPrimaryDark">#FF000000</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="primary">#FF000000</color>
+    <color name="secondary">#FF000000</color>
+    <color name="text_box">#40B69EE6</color>
+    <color name="helper">#918D8D</color>
+    <color name="delete">#E12525</color>
+    <color name="textgrey">#666666</color>
+
+    <color name="_bg__android_small___employee_availability_color">#282829</color>
+    <color name="_bg__status_ek1_color">#F0EFE6</color>
+    <color name="rectangle_26_color">#0E0E0E</color>
+    <color name="rectangle_51_color">#1A1A1A</color>
+    <color name="rectangle_66_color">#E7C827</color>
+    <color name="rectangle_64_color">#783783</color>
+    <color name="available_color">#4D420B</color>
+    <color name="available_ek1_color">#200D23</color>
+    <color name="rectangle_70_color">#38A2A9</color>
+    <color name="available_ek4_color">#0E2A2C</color>
+
+    <color name="close_color_purple">#783783</color>
+    <color name="open_color_yellow">#D1B30F</color>
+    <color name="fullday_teal">#38A2A9</color>
+    <color name="gray">#cccac6</color>
+    <color name="blue">#6eaffa</color>
+    <color name="slightly_darker_purple">#EFE5FD</color>
+</resources>

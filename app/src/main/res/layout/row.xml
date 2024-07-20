@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_full_name"
+            android:text="@string/profile_default_employee_name"
+            android:textSize="22sp"
+            android:padding="16dp"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandable_layout">
+
+            <!-- Number label and phone number -->
+            <TextView
+                android:id="@+id/number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/textgrey"
+                android:textStyle="bold"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_phone_number"
+                android:text="@string/profile_default_phone_number"
+                android:layout_toEndOf="@id/number_label"/>
+
+            <!-- Training label -->
+            <TextView
+                android:id="@+id/training_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Training:"
+                android:textColor="@color/textgrey"
+                android:textStyle="bold"
+                android:layout_marginEnd="76dp"
+                android:layout_alignBaseline="@id/profile_phone_number"
+                android:layout_alignParentEnd="true"/>
+
+            <!-- Opening shift indicator -->
+            <TextView
+                android:id="@+id/opening_shift_indicator"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/circle_yellow"
+                android:textStyle="bold"
+                android:text="O"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="46dp"
+                android:layout_alignBaseline="@id/profile_phone_number"
+                android:layout_alignParentEnd="true"/>
+
+            <!-- Closing shift indicator -->
+            <TextView
+                android:id="@+id/closing_shift_indicator"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/circle_purple"
+                android:text="C"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="16dp"
+                android:layout_alignBaseline="@id/profile_phone_number"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/table_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_availability_title"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/textgrey"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_below="@id/profile_phone_number"/>
+
+            <!-- Table Layout for Availability -->
+            <TableLayout
+                android:id="@+id/availability_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/table_title"
+                android:stretchColumns="*"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <!-- Header Row -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="W"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                </TableRow>
+                <TableRow>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/availability_table"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

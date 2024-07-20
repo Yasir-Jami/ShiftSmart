@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_transform">
+
+    <fragment
+        android:id="@+id/nav_transform"
+        android:name="com.example.ShiftSmart.ui.transform.ProfileFragment"
+        android:label="@string/menu_transform"
+        tools:layout="@layout/fragment_transform" />
+
+    <fragment
+        android:id="@+id/nav_reflow"
+        android:name="com.example.ShiftSmart.ui.reflow.ReflowFragment"
+        android:label="@string/menu_reflow"
+        tools:layout="@layout/fragment_reflow" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.ShiftSmart.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.ShiftSmart.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/addProfileFragment"
+        android:name="com.example.ShiftSmart.ui.AddProfileFragment"
+        android:label="Add Profile"
+        tools:layout="@layout/fragment_add_profile" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.ShiftSmart.ui.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/addAvailabilityFragment"
+        android:name="com.example.ShiftSmart.ui.AddAvailabilityFragment"
+        android:label="Availability"
+        tools:layout="@layout/fragment_availability"/>
+
+    <fragment
+        android:id="@+id/add_shifts"
+        android:name="com.example.ShiftSmart.AddShiftsFragment"
+        android:label="fragment_add_shifts"
+        tools:layout="@layout/fragment_add_shifts" />
+
+    <fragment
+        android:id="@+id/add_shift_fullday"
+        android:name="com.example.ShiftSmart.AddShiftsFulldayFragment"
+        android:label="fragment_add_shift_fullday"
+        tools:layout="@layout/fragment_add_shift_fullday" />
+
+    <fragment
+        android:id="@+id/ChooseEmployee"
+        android:name="com.example.ShiftSmart.EmployeeSelection"
+        android:label="Choose Employee"
+        tools:layout="@layout/fragment_employee_selection" />
+
+</navigation>

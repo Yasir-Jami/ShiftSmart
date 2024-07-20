@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fixedContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp">
+            <ImageButton
+                android:id="@+id/previousMonthButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src = "@drawable/ic_chevron_left"
+                android:textColor="@color/blue"
+                android:background="@null"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/monthYearTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="@string/feb_2024"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+            <ImageButton
+                android:id="@+id/nextMonthButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_chevron_right"
+                android:textColor="@color/blue"
+                android:background="@null"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sun"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mon"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tue"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wed"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/thur"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fri"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sat"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!-- When shifts are scheduled (Weekday): -->
+    <LinearLayout
+        android:id="@+id/shiftsContainerShifts"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/openShiftsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/dateScheduledTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="March 12, 2024"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:id="@+id/openingEmployee1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/openingEmployee2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/openingEmployee3TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/shiftsContainerSeparator"
+            android:layout_width="2dp"
+            android:layout_height="110dp"
+            android:background="@color/slightly_darker_purple"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/closeShiftsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/closingEmployee1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15sp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/closingEmployee2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15sp"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/closingEmployee3TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="15sp"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee C (Trained)"
+                android:textSize="15sp"
+                android:layout_marginLeft="14dp"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- When shifts are scheduled (Weekend): -->
+    <LinearLayout
+        android:id="@+id/shiftsContainerShiftsWeekend"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dateScheduledTVWeekend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="March 12, 2024"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Day:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:id="@+id/fullDayEmployee1TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/fullDayEmployee2TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/fullDayEmployee3TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <!-- No date selected  -->
+
+    <LinearLayout
+        android:id="@+id/noDateSelected"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No date selected."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <!-- Date selected but no shifts scheduled  -->
+
+    <LinearLayout
+        android:id="@+id/noShiftsScheduled"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/noShiftsScheduledTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No shifts scheduled."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/addEditShiftButtons"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addShiftButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Add Shift"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/editShiftButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Shift"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
